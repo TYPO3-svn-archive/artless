@@ -1,0 +1,30 @@
+### config ###
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.Config.ts">
+
+### <head> of page ###
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.Title.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.RSSMenu.ts">
+
+### menus ###
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.Menu.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.MainMenu.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.LanguageMenu.ts">
+
+### content elements ###
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.SiteTitle.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.PageTitle.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.HorizontalRule.ts">
+
+### views ###
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.ListView.ts">
+
+### content structure ###
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.Header.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.Content.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.Footer.ts">
+
+### <body> of page ###
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.Page.ts">
+
+### <html> of page ###
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.Site.ts">

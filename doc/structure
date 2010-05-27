@@ -1,0 +1,15 @@
+page = A.Site
+	100 = A.Page
+		100 = A.Header
+			100 = A.SiteTitle
+			200 = A.MainMenu
+			300 = A.LanguageMenu #TODO
+		200 = A.HorizontalRule
+		300 = A.Content
+			100 = A.PageTitle
+			200 = styles.content.getLeft
+			300 = styles.content.get
+			400 = styles.content.getRight
+			500 = styles.content.getBorder
+		400 = A.HorizontalRule
+		500 = A.Footer

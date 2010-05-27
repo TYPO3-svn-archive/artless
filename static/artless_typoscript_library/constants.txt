@@ -1,0 +1,10 @@
+A {
+	
+	homeUid = 1
+	footerStoragePid = 7
+	rssStoragePid = 26
+	
+	itemsStoragePids = 4
+	itemsPerPage = 3
+	
+}
