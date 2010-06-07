@@ -1,5 +1,7 @@
 A {
 	
+	baseURL = http://set.your.baseURL/
+	
 	homeUid = 1
 	footerStoragePid = 7
 	rssStoragePid = 26

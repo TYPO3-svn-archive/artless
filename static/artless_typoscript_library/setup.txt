@@ -1,30 +1,43 @@
 ### config ###
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.Config.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.head.Config.ts">
 
 ### <head> of page ###
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.Title.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.RSSMenu.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.head.Title.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.head.CSSFiles.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.head.JavaScriptFiles.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.head.RSSMenu.ts">
 
 ### menus ###
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.Menu.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.MainMenu.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.LanguageMenu.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.ul.Menu.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.ul.MainMenu.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.ul.LanguageMenu.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.ul.Pager.ts">
 
 ### content elements ###
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.SiteTitle.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.PageTitle.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.HorizontalRule.ts">
-
-### views ###
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.ListView.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.html.SiteTitle.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.html.PageTitle.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.html.HorizontalRule.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.html.SiteTitle.ts">
 
 ### content structure ###
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.Header.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.Content.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.Footer.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.div.Header.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.div.ContentLeft.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.div.ContentNormal.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.div.ContentRight.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.div.ContentBorder.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.div.Content.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.div.Footer.ts">
+
+### models ###
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.models.Page.ts">
+
+### views ###
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.views.PageSingle.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.views.PageList.ts">
 
 ### <body> of page ###
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.Page.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.pages.Page.ts">
 
 ### <html> of page ###
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.Site.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.sites.Site.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.sites.RSSSite.ts">
