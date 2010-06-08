@@ -37,7 +37,9 @@
 
 ### <body> of page ###
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.pages.Page.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.pages.FlashPage.ts">
 
 ### <html> of page ###
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.sites.Site.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.sites.RSSSite.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/A.sites.FlashSite.ts">

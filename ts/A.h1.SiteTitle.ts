@@ -1,5 +1,5 @@
-A.html.SiteTitle = TEXT
-A.html.SiteTitle {
+A.h1.SiteTitle = TEXT
+A.h1.SiteTitle {
 
 	wrap = <h1 class="A_sitetitle">|</h1>
 	value < sitetitle

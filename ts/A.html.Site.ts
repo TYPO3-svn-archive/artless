@@ -33,7 +33,7 @@ A.sites.Site {
 	
 	### JavaScript ###
 	includeJS {
-		jQuery = fileadmin/js/jquery.js
+		jQuery = EXT:artless/js/jquery-1.4.2.min.js
 		script = fileadmin/js/script.js
 	}
 	
