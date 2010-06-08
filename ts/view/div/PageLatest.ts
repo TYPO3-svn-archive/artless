@@ -1,0 +1,1 @@
+A.views.PageLatest =< A.views.PageList
