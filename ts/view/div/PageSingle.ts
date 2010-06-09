@@ -1,5 +1,5 @@
-A.views.PageSingle =< A.models.Page
-A.views.PageSingle {
+A.view.div.PageSingle =< A.model.div.Page
+A.view.div.PageSingle {
 	
 	wrap = <div class="A_pagesingle">|</div>
 	

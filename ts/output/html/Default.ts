@@ -1,20 +1,48 @@
-A.sites.Site = PAGE
-A.sites.Site {
+A.output.html.Default = PAGE
+A.output.html.Default {
 
 	### favicon ###
 	shortcutIcon = favicon.ico
 	
 	### config ###
-	config < A.head.Config
+	config {
+		
+		doctype = xhtml_trans
+		xhtml_cleaning = all
+		xmlprologue = none
+		
+		### disable standard title ###
+		noPageTitle = 2
+		
+		### spam protection ###
+		spamProtectEmailAddresses = 2
+		spamProtectEmailAddresses_atSubst = (at)
+		spamProtectEmailAddresses_lastDotSubst = (dot)
+		
+		### RealURL ###
+		simulateStaticDocuments = 0
+		baseURL = {$A.baseURL}
+		tx_realurl_enable = 1
+		# ??? redirectOldLinksToNew = 1
+		
+	}
 	
 	### custom title and RSS menu ###
 	headerData {
-		100 =< A.head.Title
-		200 =< A.head.RSSMenu
+		100 =< A.element.title.Title
+		200 =< A.element.link.RSSMenu
 	}
 	
 	### CSS ###
-	includeCSS =< A.html.link.CSSFiles
+	includeCSS {		
+		screen = fileadmin/css/screen.css
+		screen.media = screen, projection
+		print = fileadmin/css/print.css
+		print.media = print
+		ie = fileadmin/css/ie.css
+		ie.media = screen, projection
+		ie.allWrap = <!--[if IE]>|<![endif]-->
+	}
 	
 	### temporary inline CSS ###
 	CSS_inlineStyle (
@@ -37,6 +65,6 @@ A.sites.Site {
 		wrap = <body id="A_page-|">
 	}
 	
-	100 =< A.pages.Page
+	100 =< A.layout.div.Default
 	
 }

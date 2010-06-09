@@ -1,16 +1,16 @@
-A.views.PageList = HMENU
-A.views.PageList {
+A.view.div.PageList = HMENU
+A.view.div.PageList {
 	
 	wrap = <div class="A_pagelist">|</div>
 	
 	special = directory
-	special.value = {$A.itemsStoragePids}
+	special.value = {$A.pids.items}
 	
-	maxItems = {$A.itemsPerPage}
-	#begin = {GPvar:tx_pagebrowse_pi1|page} * {$A.itemsPerPage}
+	maxItems = {$A.pager.itemsPerPage}
+	#begin = {GPvar:tx_pagebrowse_pi1|page} * {$A.pager.itemsPerPage}
 	begin.cObject = TEXT
 	begin.cObject {
-		value = {GPvar:tx_pagebrowse_pi1|page} * {$A.itemsPerPage}
+		value = {GPvar:tx_pagebrowse_pi1|page} * {$A.pager.itemsPerPage}
 		insertData = 1
 	}
 	
@@ -22,9 +22,9 @@ A.views.PageList {
 			
 			doNotShowLink = 1
 			
-			before.cObject =< A.models.Page
+			before.cObject =< A.model.div.Page
 			
-			# wrapItemAndSub = <li class="A_first">|</li>|*|<li>|</li>|*|<li class="A_last">|</li>
+			wrapItemAndSub = <div class="A_first">|</div>|*|<div>|</div>|*|<div class="A_last">|</div>
 			
 		}
 		

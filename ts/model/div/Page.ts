@@ -1,5 +1,5 @@
-A.models.Page = COA
-A.models.Page {
+A.model.div.Page = COA
+A.model.div.Page {
 	
 	wrap = <div class="A_page">|</div>
 	

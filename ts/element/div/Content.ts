@@ -1,16 +1,16 @@
-A.html.div.Content = COA
-A.html.div.Content {
+A.element.div.Content = COA
+A.element.div.Content {
 
 	wrap = <div class="A_content">|</div>
 	
-	100 =< A.html.h1.PageTitle
+	100 =< A.element.h1.PageTitle
 	
-	200 =< A.html.div.ContentLeft
+	200 =< A.element.div.ContentLeft
 	
-	300 =< A.html.div.ContentNormal
+	300 =< A.element.div.ContentNormal
 	
-	400 =< A.html.div.ContentRight
+	400 =< A.element.div.ContentRight
 	
-	500 =< A.html.div.ContentBorder
+	500 =< A.element.div.ContentBorder
 		
 }

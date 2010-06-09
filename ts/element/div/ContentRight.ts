@@ -1,5 +1,5 @@
-A.html.div.ContentRight < styles.content.getRight
-A.html.div.ContentRight {
+A.element.div.ContentRight < styles.content.getRight
+A.element.div.ContentRight {
 	
 	wrap = <div class="A_contentright">|</div>
 	

@@ -1,26 +1,24 @@
-A.ul.LanguageMenu = HMENU
-A.ul.LanguageMenu {
-	
-	wrap = <div class="A_languagemenu">|</div>
+A.element.ul.LanguageMenu = HMENU
+A.element.ul.LanguageMenu {
 	
 	special = language
-	special.value = 0,1
+	special.value = {$A.language.uids}
 	special.normalWhenNoLanguage = 0
 	
 	1 = TMENU
 	1 {
 		
 		noBlur = 1
-		wrap = <ul class="A_menu">|</ul>
+		wrap = <ul class="A_languagemenu A_menu">|</ul>
 		
 		NO = 1
 		NO {
 			linkWrap = <li>|</li>
 			# this is shown instead of the page title
-			stdWrap.override = English||Deutsch
+			stdWrap.override = {$A.language.labels}
 			doNotLinkIt = 1
 			stdWrap.typolink.parameter.data = page:uid
-			stdWrap.typolink.additionalParams = &L=0||&L=1
+			stdWrap.typolink.additionalParams = {$A.language.params}
 			stdWrap.typolink.addQueryString = 1
 			stdWrap.typolink.addQueryString.exclude = L,id,cHash,no_cache
 			stdWrap.typolink.addQueryString.method = GET

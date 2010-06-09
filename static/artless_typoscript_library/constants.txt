@@ -2,11 +2,27 @@ A {
 	
 	baseURL = http://set.your.baseURL/
 	
-	homeUid = 1
-	footerStoragePid = 7
-	rssStoragePid = 26
+	language {
+		# keys = en, de
+		uids = 0, 1
+		labels = English || Deutsch
+		params = &L=0 || &L=1
+		default = en
+	}
 	
-	itemsStoragePids = 4
-	itemsPerPage = 3
+	uids {
+		home = 1
+		
+	}
+	
+	pids {
+		footer = 7
+		rss = 26
+		items = 4
+	}
+	
+	pager {
+		itemsPerPage = 3
+	}
 	
 }

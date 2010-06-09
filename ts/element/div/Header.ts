@@ -1,12 +1,12 @@
-A.html.div.Header = COA
-A.html.div.Header {
-
+A.element.div.Header = COA
+A.element.div.Header {
+	
 	wrap = <div class="A_header">|</div>
 	
-	100 =< A.html.h1.SiteTitle
+	100 =< A.element.h1.SiteTitle
 	
-	200 =< A.html.ul.MainMenu
+	200 =< A.element.ul.MainMenu
 	
-	300 =< A.html.ul.LanguageMenu
-
+	300 =< A.element.ul.LanguageMenu
+	
 }

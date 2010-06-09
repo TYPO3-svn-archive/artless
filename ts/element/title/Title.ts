@@ -1,5 +1,5 @@
-A.head.Title = COA
-A.head.Title {
+A.element.title.Title = COA
+A.element.title.Title {
 	
 	wrap = <title>|</title>
 	

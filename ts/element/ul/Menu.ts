@@ -1,5 +1,5 @@
-A.ul.Menu = HMENU
-A.ul.Menu {
+A.element.ul.Menu = HMENU
+A.element.ul.Menu {
 
 	1 = TMENU
 	1 {
