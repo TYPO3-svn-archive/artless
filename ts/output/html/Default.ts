@@ -44,13 +44,6 @@ A.output.html.Default {
 		ie.allWrap = <!--[if IE]>|<![endif]-->
 	}
 	
-	### temporary inline CSS ###
-	CSS_inlineStyle (
-		.A_act, .A_cur, .A_actifsub, .A_curifsub {
-			font-weight: bold;
-		}
-	)
-	
 	### JavaScript ###
 	includeJS {
 		jQuery = EXT:artless/js/jquery-1.4.2.min.js

@@ -1,4 +1,4 @@
-### Add this line to the TSconfig of your root page:
+### Add this line to the TSconfig of your root page or any other page:
 ### <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/tsconfig/TSconfig.ts">
 ### Adjust values afterwards!
 

@@ -5,8 +5,12 @@ A.element.div.Footer {
 	
 	100 =< A.element.ul.Menu
 	100 {
+		
 		special = directory
-		special.value = {$A.footerStoragePid}
+		special.value = {$A.pids.footer}
+		
+		1.wrap = <ul class="A_footermenu A_menu">|</ul>
+		
 	}
 
 }

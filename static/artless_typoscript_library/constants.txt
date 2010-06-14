@@ -3,11 +3,9 @@ A {
 	baseURL = http://set.your.baseURL/
 	
 	language {
-		# keys = en, de
 		uids = 0, 1
 		labels = English || Deutsch
 		params = &L=0 || &L=1
-		default = en
 	}
 	
 	uids {

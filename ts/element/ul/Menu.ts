@@ -9,11 +9,9 @@ A.element.ul.Menu {
 		
 		NO = 1
 		NO {
-			# ATagBeforeWrap = 1
-			wrapItemAndSub = <li class="A_first">|</li>|*|<li>|</li>|*|<li class="A_last">|</li>
-			# linkWrap = <span>|</span>
+			allWrap = <li class="A_first">|</li>|*|<li>|</li>|*|<li class="A_last">|</li>
+			ATagBeforeWrap = 1
 			ATagTitle.field = description
-			# stdWrap.htmlSpecialChars = 1
 		}
 		
 		IFSUB < .NO
@@ -23,21 +21,25 @@ A.element.ul.Menu {
 		
 		CUR < .NO
 		CUR {
+			linkWrap = <b>|</b>
 			ATagParams = class="A_cur"
 		}
 		
 		CURIFSUB < .NO
 		CURIFSUB {
+			linkWrap = <b>|</b>
 			ATagParams = class="A_curifsub"
 		}
 		
 		ACT < .NO
 		ACT {
+			linkWrap = <b>|</b>
 			ATagParams = class="A_act"
 		}
 		
 		ACTIFSUB < .NO
 		ACTIFSUB {
+			linkWrap = <b>|</b>
 			ATagParams = class="A_actifsub"
 		}
 		

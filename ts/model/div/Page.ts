@@ -25,8 +25,9 @@ A.model.div.Page {
 		}
 		stdWrap.typolink {
 			parameter.field = uid
+			wrap = <p>|</p>
+			required = 1
 		}
-		wrap = <p>|</p>
 	}
 	
 	300 = TEXT

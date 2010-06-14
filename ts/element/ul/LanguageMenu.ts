@@ -28,7 +28,7 @@ A.element.ul.LanguageMenu {
 		
 		ACT < .NO
 		ACT {
-			linkWrap = <li class="A_act">|</li>
+			linkWrap = <li class="A_act"><b>|</b></li>
 			stdWrap.typolink >
 		}
 		
