@@ -24,7 +24,7 @@ A.view.div.PageList {
 			
 			before.cObject =< A.model.div.Page
 			
-			wrapItemAndSub = <div class="A_pagelist-item">|</div>
+			allWrap = <div class="A_pagelist-item">|</div>
 			
 		}
 		
