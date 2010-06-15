@@ -3,35 +3,31 @@ A.model.div.Page {
 	
 	wrap = <div class="A_page">|</div>
 	
-	100 = COA
+	100 = TEXT
 	100 {
-		
-		wrap = <h3>|</h3>
-		
+		field = title
 		typolink {
 			parameter.field = uid
 		}
-		
-		100 = TEXT
-		100 {
-			field = title
-			wrap = |
-		}
-		
-		200 = IMAGE
-		200 {
-			file {
-				import = uploads/media/
-				import {
-					field = media
-					listNum = 0
-				}
-				width = 575c
-				height = 400c
+		wrap = <h3>|</h3>
+	}
+	
+	200 = IMAGE
+	200 {
+		file {
+			import = uploads/media/
+			import {
+				field = media
+				listNum = 0
 			}
-			params = class="A_image"
+			width = 575c
+			height = 400c
 		}
-		
+		stdWrap.typolink {
+			parameter.field = uid
+			wrap = <p class="A_image">|</p>
+			required = 1
+		}
 	}
 	
 	300 = TEXT
