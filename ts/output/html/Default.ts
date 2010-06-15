@@ -47,6 +47,7 @@ A.output.html.Default {
 	### JavaScript ###
 	includeJS {
 		jQuery = EXT:artless/js/jquery-1.4.2.min.js
+		textOverflow = EXT:artless/js/jquery.text-overflow.min.js
 		script = fileadmin/js/script.js
 	}
 	
