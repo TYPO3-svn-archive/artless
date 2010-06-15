@@ -25,7 +25,7 @@ A.model.div.Page {
 		}
 		stdWrap.typolink {
 			parameter.field = uid
-			wrap = <p>|</p>
+			wrap = <p class="A_image">|</p>
 			required = 1
 		}
 	}
