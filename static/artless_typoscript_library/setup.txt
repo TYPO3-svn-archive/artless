@@ -27,6 +27,7 @@
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/element/div/Footer.ts">
 
 ### model
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/model/a/Page.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/model/div/Page.ts">
 
 ### view
