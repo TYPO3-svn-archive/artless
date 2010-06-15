@@ -6,7 +6,9 @@ A.model.div.Page {
 	100 = TEXT
 	100 {
 		field = title
-		typolink =< A.model.a.Page
+		typolink {
+			parameter.field = uid
+		}
 		wrap = <h3>|</h3>
 	}
 	
