@@ -10,7 +10,7 @@ A.model.div.Page {
 			parameter.field = uid
 			ATagParams.cObject = TEXT
 			ATagParams.cObject {
-				field = title
+				field = description // title
 				wrap = title="|"
 			}
 		}
@@ -30,9 +30,13 @@ A.model.div.Page {
 		}
 		stdWrap.typolink {
 			parameter.field = uid
-			wrap = <p class="A_image">|</p>
-			required = 1
+			ATagParams.cObject = TEXT
+			ATagParams.cObject {
+				field = description // title
+				wrap = title="|"
+			}
 		}
+		wrap = <p class="A_image">|</p>
 	}
 	
 	300 = TEXT
@@ -47,6 +51,11 @@ A.model.div.Page {
 		field = author
 		typolink {
 			parameter.field = author_email
+			ATagParams.cObject = TEXT
+			ATagParams.cObject {
+				field = author
+				wrap = title="|"
+			}
 		}
 		wrap = <p>|</p>
 	}
