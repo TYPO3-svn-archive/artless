@@ -22,7 +22,7 @@ A.model.div.Page {
 			height = 400c
 		}
 		stdWrap.typolink < A.model.a.Page
-		wrap = <p class="A_image">|</p>
+		stdWrap.wrap = <p class="A_image">|</p>
 	}
 	
 	300 = TEXT
