@@ -29,7 +29,7 @@ A.model.div.Page {
 	300 {
 		field = crdate
 		date = d.m.Y
-		wrap = <p>|</p>
+		wrap = <p class="A_date">|</p>
 	}
 	
 	400 = TEXT
@@ -43,13 +43,13 @@ A.model.div.Page {
 				wrap = title="|"
 			}
 		}
-		wrap = <p>|</p>
+		wrap = <p class="A_author">|</p>
 	}
 	
 	500 = TEXT
 	500 {
 		field = abstract
-		wrap = <p>|</p>
+		wrap = <p class="A_abstract">|</p>
 	}
 	
 }
