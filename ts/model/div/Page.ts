@@ -8,6 +8,11 @@ A.model.div.Page {
 		field = title
 		typolink {
 			parameter.field = uid
+			ATagParams.cObject = TEXT
+			ATagParams.cObject {
+				field = title
+				wrap = title="|"
+			}
 		}
 		wrap = <h3>|</h3>
 	}
