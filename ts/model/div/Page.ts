@@ -6,14 +6,7 @@ A.model.div.Page {
 	100 = TEXT
 	100 {
 		field = title
-		typolink {
-			parameter.field = uid
-			ATagParams.cObject = TEXT
-			ATagParams.cObject {
-				field = description // title
-				wrap = title="|"
-			}
-		}
+		typolink =< A.model.a.Page
 		wrap = <h3>|</h3>
 	}
 	
@@ -28,14 +21,7 @@ A.model.div.Page {
 			width = 575c
 			height = 400c
 		}
-		stdWrap.typolink {
-			parameter.field = uid
-			ATagParams.cObject = TEXT
-			ATagParams.cObject {
-				field = description // title
-				wrap = title="|"
-			}
-		}
+		stdWrap.typolink < A.model.a.Page
 		wrap = <p class="A_image">|</p>
 	}
 	

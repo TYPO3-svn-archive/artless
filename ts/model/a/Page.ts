@@ -2,7 +2,7 @@ A.model.a.Page {
 	parameter.field = uid
 	ATagParams.cObject = TEXT
 	ATagParams.cObject {
-		field = title
+		field = description // title
 		wrap = title="|"
 	}
 }
