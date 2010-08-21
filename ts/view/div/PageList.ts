@@ -22,9 +22,7 @@ A.view.div.PageList {
 			
 			doNotShowLink = 1
 			
-			before.cObject =< A.model.div.Page
-			
-			allWrap = <div class="A_pagelist-item">|</div>
+			before.cObject =< A.view.div.PageListItem
 			
 		}
 		

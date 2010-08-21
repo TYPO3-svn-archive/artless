@@ -6,12 +6,12 @@ A.element.title.Title {
 	100 = TEXT
 	100 {
 		field = title
-		noTrimWrap = || — |
 	}
 	
 	200 = TEXT
 	200 {
 		value < sitetitle
+		noTrimWrap = | — ||
 	}
 	
 }

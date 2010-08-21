@@ -9,18 +9,19 @@ A {
 	}
 	
 	uids {
-		home = 1
-		
+		home = 0
 	}
 	
 	pids {
-		footer = 7
-		rss = 26
-		items = 4
+		footer = 0
+		rss = 0
+		items = 0
 	}
 	
 	pager {
-		itemsPerPage = 3
+		itemsPerPage = 16
 	}
+	
+	dateFormat = d.m.Y
 	
 }

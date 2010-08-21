@@ -1,10 +1,7 @@
-A.model.div.Page = COA
-A.model.div.Page {
+A.model.Page {
 	
-	wrap = <div class="A_page">|</div>
-	
-	100 = TEXT
-	100 {
+	title = TEXT
+	title {
 		field = title
 		typolink  {
 			parameter.field = uid
@@ -12,18 +9,26 @@ A.model.div.Page {
 		wrap = <h3>|</h3>
 	}
 	
-	200 =< A.element.img.Thumbnail
-	200 {
-		wrap = <p class="A_thumbnail">|</p>
+	subtitle = TEXT
+	subtitle {
+		field = subtitle
+		wrap = <p>|</p>
 	}
 	
-	300 =< A.element.span.Date
-	300 {
+	thumbnail =< A.element.img.Thumbnail
+	thumbnail {
+		stdWrap.wrap = <p class="A_thumbnail">|</p>
+	}
+		
+	creationDate =< A.element.span.Date
+	creationDate {
 		wrap = <p class="A_date">|</p>
 	}
 	
-	400 = TEXT
-	400 {
+	crdate < creationDate
+	
+	author = TEXT
+	author {
 		field = author
 		typolink {
 			parameter.field = author_email
@@ -36,8 +41,8 @@ A.model.div.Page {
 		wrap = <p class="A_author">|</p>
 	}
 	
-	500 = TEXT
-	500 {
+	abstract = TEXT
+	abstract {
 		field = abstract
 		wrap = <p class="A_abstract">|</p>
 	}

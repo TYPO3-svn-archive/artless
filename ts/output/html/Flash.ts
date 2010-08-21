@@ -30,7 +30,7 @@ A.output.html.Flash {
 		1000 = TEXT
 		1000.value = attributes.id = "flash";
 		1100 = TEXT
-		1100.value = swfobject.embedSWF("/fileadmin/swf/fallingtimes/bin-release/FallingTimes.swf", "no-flash", "100%", "100%", "10.0.0", "/fileadmin/swf/fallingtimes/bin-release/playerProductInstall.swf", flashvars, params, attributes);
+		1100.value = swfobject.embedSWF("/fileadmin/swf/bin-release/FallingTimes.swf", "no-flash", "100%", "100%", "10.0.0", "/fileadmin/swf/fallingtimes/bin-release/playerProductInstall.swf", flashvars, params, attributes);
 	}
 	
 	100 =< A.layout.div.Flash

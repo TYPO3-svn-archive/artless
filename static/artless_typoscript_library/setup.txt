@@ -17,6 +17,12 @@
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/element/ul/LanguageMenu.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/element/ul/Pager.ts">
 
+### element <img>
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/element/img/Thumbnail.ts">
+
+### element <span>
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/element/span/Date.ts">
+
 ### element <div>
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/element/div/Header.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/element/div/ContentLeft.ts">
@@ -28,10 +34,11 @@
 
 ### model
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/model/a/Page.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/model/div/Page.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/model/Page.ts">
 
 ### view
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/view/div/PageSingle.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/view/div/PageListItem.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/view/div/PageList.ts">
 
 ### layout
