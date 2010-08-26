@@ -29,7 +29,7 @@ A.output.html.Default {
 	
 	### custom title and RSS menu ###
 	headerData {
-		100 =< A.element.title.Title
+		100 =< A.element.title.BrowserTitle
 		200 =< A.element.link.RSSMenu
 	}
 	
