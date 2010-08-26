@@ -1,0 +1,35 @@
+A {
+	
+	baseURL = http://set.your.baseURL/
+	
+	language {
+		uids = 0, 1
+		labels = English || Deutsch
+		params = &L=0 || &L=1
+	}
+	
+	uids {
+		home = 0
+	}
+	
+	pids {
+		footer = 0
+		rss = 0
+		pageListBrowsable = 
+		pageListLatest = 
+		pageListUpcoming = 
+	}
+	
+	maxItems {
+		pageList = 0
+		pageListBrowsable = 5
+		pageListLatest = 3
+		pageListRandom = 1
+		pageListUpcoming = 0
+	}
+	
+	dateFormat {
+		creationDate = %A, %d. %B %Y at %H:%M
+	}
+	
+}

@@ -1,0 +1,1 @@
+A.element.img.Thumbnail =< A.element.img.Image
