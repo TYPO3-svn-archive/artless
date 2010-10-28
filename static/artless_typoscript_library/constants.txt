@@ -9,12 +9,13 @@ A {
 	}
 	
 	uids {
-		home = 0
+		home = 1
 	}
 	
 	pids {
 		footer = 0
 		rss = 0
+		pageList = 
 		pageListBrowsable = 
 		pageListLatest = 
 		pageListUpcoming = 
