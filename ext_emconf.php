@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'description' => '',
 	'category' => 'misc',
 	'author' => 'Dirk Reinbold',
-	'author_email' => 'typo3@codecosmetics.com',
+	'author_email' => 'typo3@5thpart.com',
 	'shy' => '',
 	'dependencies' => '',
 	'conflicts' => '',
@@ -36,7 +36,10 @@ $EM_CONF[$_EXTKEY] = array(
 		'conflicts' => array(
 		),
 		'suggests' => array(
-			'realurl' => ''	
+			'realurl' => '',
+			'pagebrowse' => '',
+			'js_css_optimizer' => '',
+			't3filelist' => ''
 		)
 	),
 	'_md5_values_when_last_written' => 'a:8:{s:9:"ChangeLog";s:4:"0bee";s:10:"README.txt";s:4:"ee2d";s:12:"ext_icon.gif";s:4:"1bdc";s:14:"ext_tables.php";s:4:"3e01";s:19:"doc/wizard_form.dat";s:4:"1ace";s:20:"doc/wizard_form.html";s:4:"4058";s:47:"static/artless_typoscript_library/constants.txt";s:4:"01ab";s:43:"static/artless_typoscript_library/setup.txt";s:4:"01ab";}'
