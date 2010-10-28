@@ -5,7 +5,7 @@ A.element.ul.Menu {
 	1 {
 		
 		noBlur = 1
-		wrap = <ul class="A_menu">|</ul>
+		wrap = <ul class="A_menu clearfix">|</ul>
 		
 		NO = 1
 		NO {
