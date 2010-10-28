@@ -9,7 +9,7 @@ A.element.div.Footer {
 		special = directory
 		special.value = {$A.pids.footer}
 		
-		1.wrap = <ul class="A_footermenu A_menu">|</ul>
+		1.wrap = <ul class="A_footermenu A_menu clearfix">|</ul>
 		
 	}
 
