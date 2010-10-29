@@ -2,6 +2,7 @@
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/lib/typolink/PageLink.ts">
 
 # element
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/element/span/Date.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/element/title/BrowserTitle.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/element/link/RSSMenu.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/element/h1/SiteTitle.ts">

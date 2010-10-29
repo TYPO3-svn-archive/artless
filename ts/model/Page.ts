@@ -4,7 +4,6 @@ A.model.Page {
 	title {
 		field = title
 		wrap = <h1>|</h1>
-		typolink < A.lib.typolink.PageLink
 	}
 	
 	subtitle = TEXT
@@ -25,30 +24,9 @@ A.model.Page {
 		parseFunc =< lib.parseFunc_RTE
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	creationDate = TEXT
-	creationDate {
-		
-		innerWrap = <span class="A_creationdate A_date">|</span>
-		
+	dateCreation =< A.element.span.Date
+	dateCreation {
 		field = crdate
-		# strftime = %a, %d. %B
-		
-		strftime = {$A.dateFormat.creationDate}
-		insertData = 1
-		
-		# strftime = {LLL:EXT:artless/locallang.xml:A.element.span.CreationDate.date}
-		# stdWrap.insertData = 1
-		
 	}
 	
 	author = TEXT
