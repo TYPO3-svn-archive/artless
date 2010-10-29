@@ -6,7 +6,6 @@ A.view.div.PageListItem {
 	100 =< A.model.Page.title
 	100 {
 		wrap = <h3>|</h3>
-		typolink < A.lib.typolink.PageLink
 	}
 	
 }
