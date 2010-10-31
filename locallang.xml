@@ -6,6 +6,7 @@
 	</meta>
 	<data type="array">
 		<languageKey index="default" type="array">
+			<label index="A.labels.timePeriod">Time period:</label>
 			<label index="A.element.span.CreationDate.date">%a, %d. %B</label>
 		</languageKey>
 	</data>
