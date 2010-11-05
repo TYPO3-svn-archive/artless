@@ -1,5 +1,5 @@
-A.layout.Normal = COA
-A.layout.Normal {
+A.res.div.LayoutNormal = COA
+A.res.div.LayoutNormal {
 
 	wrap = <div class="A_container">|</div>
 	
