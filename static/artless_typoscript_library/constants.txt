@@ -19,6 +19,7 @@ A {
 		pageListBrowsable = 
 		pageListLatest = 
 		pageListUpcoming = 
+		relatedPagesMenu = 
 	}
 	
 	maxItems {

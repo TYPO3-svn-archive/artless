@@ -3,6 +3,7 @@
 
 # element
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/element/span/Date.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/element/span/RelatedPages.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/element/title/BrowserTitle.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/element/link/RSSMenu.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/element/h1/SiteTitle.ts">
@@ -12,6 +13,9 @@
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/element/ul/MainMenu.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/element/ul/LanguageMenu.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/element/ul/Pager.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/element/ul/RelatedPages.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/element/ul/RelatedPagesMenu.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/element/img/ImageResource.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/element/img/Image.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/element/img/Thumbnail.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/element/img/ThumbnailNotFound.ts">
@@ -38,6 +42,10 @@
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/view/div/PageListLatest.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/view/div/PageListRandomItem.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/view/div/PageListRandom.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/view/div/PageListUpcomingItem.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/view/div/PageListUpcoming.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/view/div/PageListRelatedItem.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/view/div/PageListRelated.ts">
 
 # layout
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/layout/div/Default.ts">

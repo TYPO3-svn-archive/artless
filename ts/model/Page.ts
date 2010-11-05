@@ -14,7 +14,7 @@ A.model.Page {
 	
 	thumbnail =< A.element.img.Thumbnail
 	
-	requiredThumbnail =< A.element.img.RequiredThumbnail
+	thumbnailRequired =< A.element.img.RequiredThumbnail
 	
 	abstract = TEXT
 	abstract {
@@ -27,16 +27,19 @@ A.model.Page {
 	dateCreation =< A.element.span.Date
 	dateCreation {
 		field = crdate
+		fieldRequired = crdate
 	}
 	
 	dateStart =< A.element.span.Date
 	dateStart {
-		field = tx_artlesspages_startdate
+		field = tx_artless_startdate
+		fieldRequired = tx_artless_startdate
 	}
 	
 	dateEnd =< A.element.span.Date
 	dateEnd {
-		field = tx_artlesspages_enddate
+		field = tx_artless_enddate
+		fieldRequired = tx_artless_enddate
 	}
 	
 	datePeriod = COA
@@ -48,6 +51,7 @@ A.model.Page {
 			noTrimWrap = | – ||
 			# hide this for "one day periods"
 		}
+		fieldRequired = tx_artless_startdate
 	}
 	
 	author = TEXT
@@ -55,8 +59,13 @@ A.model.Page {
 		field = author
 	}
 	
-	authorLinked < .author
-	authorLinked {
+	authorEmail = TEXT
+	authorEmail {
+		field = author_email
+	}
+	
+	authorMailto < .author
+	authorMailto {
 		typolink {
 			parameter.field = author_email
 			ATagParams.cObject = TEXT
@@ -70,11 +79,11 @@ A.model.Page {
 	authors =< A.element.span.RelatedPages
 	authors {
 		stdWrap.outerWrap = <p class="A_authors">|</p>
-		special.value.field = tx_artlesspages_authors
-		stdWrap.fieldRequired = tx_artlesspages_authors
+		special.value.field = tx_artless_authors
+		stdWrap.fieldRequired = tx_artless_authors
 		stdWrap.prepend = TEXT
 		stdWrap.prepend {
-			data = LLL:EXT:artless_pages/locallang_db.xml:pages.tx_artlesspages_authors
+			data = LLL:EXT:artless_pages/locallang_db.xml:pages.tx_artless_authors
 			wrap = <span class="A_prefix">|</span>
 		}
 	}
@@ -82,33 +91,33 @@ A.model.Page {
 	categories =< A.element.span.RelatedPages
 	categories {
 		wrap = <p class="A_categories">|</p>
-		special.value.field = tx_artlesspages_categories
-		stdWrap.fieldRequired = tx_artlesspages_categories
+		special.value.field = tx_artless_categories
+		stdWrap.fieldRequired = tx_artless_categories
 	}
 	
 	links =< A.element.span.RelatedPages
 	links {
 		wrap = <p class="A_links">|</p>
-		special.value.field = tx_artlesspages_links
-		stdWrap.fieldRequired = tx_artlesspages_links
+		special.value.field = tx_artless_links
+		stdWrap.fieldRequired = tx_artless_links
 	}
 	
 	authors =< A.element.ul.RelatedPages
 	authors {
-		special.value.field = tx_artlesspages_authors
-		stdWrap.fieldRequired = tx_artlesspages_authors
+		special.value.field = tx_artless_authors
+		stdWrap.fieldRequired = tx_artless_authors
 	}
 	
 	categories =< A.element.ul.RelatedPages
 	categories {
-		special.value.field = tx_artlesspages_categories
-		stdWrap.fieldRequired = tx_artlesspages_categories
+		special.value.field = tx_artless_categories
+		stdWrap.fieldRequired = tx_artless_categories
 	}
 	
 	links =< A.element.ul.RelatedPages
 	links {
-		special.value.field = tx_artlesspages_links
-		stdWrap.fieldRequired = tx_artlesspages_links
+		special.value.field = tx_artless_links
+		stdWrap.fieldRequired = tx_artless_links
 	}
 	
 }

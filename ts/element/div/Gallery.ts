@@ -1,6 +1,48 @@
 A.element.div.Gallery = TEXT
 A.element.div.Gallery {
 
+	wrap = <div class="A_gallery">|</div>
+	
+	field = media
+	
+	split {
+		
+		token = ,
+		cObjNum = 1
+		
+		1 {
+			
+			100 =< A.element.img.Image
+			
+			200 = LOAD_REGISTER
+			200 {
+				imageCounter {
+					cObject = TEXT
+					cObject {
+						data = register:imageCounter
+						wrap = |+1
+					}
+					prioriCalc = intval
+				}
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+
+
+
+
+/*
+
+A.element.div.Gallery = TEXT
+A.element.div.Gallery {
+
 	wrap = <div class="A_gallery scrollable"><div class="items">|</div><a class="prev browse left">&lt;</a><a class="next browse right">&gt;</a></div>
 	
 	field = media
@@ -49,3 +91,5 @@ A.element.div.Gallery {
 	}
 	
 }
+
+*/

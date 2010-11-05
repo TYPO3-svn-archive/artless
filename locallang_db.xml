@@ -12,7 +12,7 @@
 			<label index="pages.tx_artless_authorpages">Pages:</label>
 			<label index="pages.tx_artless_authorfeusers">Website users:</label>
 			<label index="pages.tx_artless_categories">Categories:</label>
-			<label index="pages.tx_artless_links">Links:</label>
+			<label index="pages.tx_artless_relatedpages">Related pages:</label>
 			<label index="pages.tx_artless_enable_comments">Enable comments:</label>
 			<label index="pages.tx_artless_price">Price:</label>
 			<label index="pages.tx_artless_quantity">Quantity:</label>

@@ -5,12 +5,12 @@ A.element.title.BrowserTitle {
 	
 	100 = TEXT
 	100 {
-		field = title
+		value < sitetitle
 	}
 	
 	200 = TEXT
 	200 {
-		value < sitetitle
+		field = title
 		noTrimWrap = | — ||
 	}
 	

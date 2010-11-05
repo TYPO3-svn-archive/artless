@@ -2,7 +2,7 @@ A.element.ul.RelatedPages = HMENU
 A.element.ul.RelatedPages {
 	
 	special = list
-	special.value.field = tx_artlesspages_categories
+	special.value.field = tx_artless_categories
 	
 	1 = TMENU
 	1 {

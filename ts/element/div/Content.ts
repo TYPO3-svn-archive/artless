@@ -3,9 +3,11 @@ A.element.div.Content {
 
 	wrap = <div class="A_content">|</div>
 	
-	100 =< A.element.h1.PageTitle
+	100 =< A.model.Page.title
 	
 	200 =< A.element.div.ContentLeft
+	
+	250 =< A.model.Page.abstract
 	
 	300 =< A.element.div.ContentNormal
 	

@@ -5,7 +5,7 @@ A.element.div.GalleryLinked {
 	
 	split {
 		
-		1.cObject.stdWrap.typolink.parameter.cObject =< A.element.ImageResource
+		1.100.stdWrap.typolink.parameter.cObject =< A.element.img.ImageResource
 		
 	}
 	

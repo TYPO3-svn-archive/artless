@@ -93,9 +93,9 @@ $tempColumns = array(
 			),
 		)
 	),
-	'tx_artless_links' => array(
+	'tx_artless_relatedpages' => array(
 		'exclude' => 1,
-		'label' => 'LLL:EXT:artless/locallang_db.xml:pages.tx_artless_links',
+		'label' => 'LLL:EXT:artless/locallang_db.xml:pages.tx_artless_relatedpages',
 		'config' => array(
 			'type' => 'group',
 			'internal_type' => 'db',
@@ -123,6 +123,10 @@ $tempColumns = array(
 
 t3lib_div::loadTCA('pages');
 t3lib_extMgm::addTCAcolumns('pages', $tempColumns, 1);
+
+
+$TCA['pages']['columns']['media']['config']['size'] = 10;
+$TCA['pages']['columns']['media']['config']['maxitems'] = 100;
 
 
 /* t3lib_div::array_merge($TCA['pages']['palettes'],array(
@@ -157,16 +161,9 @@ $TCA['pages']['types']['1']['showitem'] = str_replace(
 	'abstract;;;richtext[]:rte_transform[mode=ts],
 	--palette--;LLL:EXT:artless/locallang.xml:A.labels.timePeriod;6;;3-3-3,
 	tx_artless_categories,
-	tx_artless_links,',
+	tx_artless_relatedpages,',
 	$TCA['pages']['types']['1']['showitem']
 );
-
-/* t3lib_div::array_merge($TCA['pages']['palettes'],array(
-	'1' => array('showitem' => 'starttime, endtime, extendToSubpages'),
-	'2' => array('showitem' => 'layout, lastUpdated, newUntil, no_search'),
-	'3' => array('showitem' => 'alias, target, no_cache, cache_timeout'),
-	'5' => array('showitem' => 'author, author_email', 'canNotCollapse' => 1)
-)); */
 
 foreach ($TCA['pages']['types'] as $pageType => &$settings) {
 	
@@ -179,7 +176,7 @@ foreach ($TCA['pages']['types'] as $pageType => &$settings) {
 				abstract;;;richtext[]:rte_transform[mode=ts],
 				--palette--;LLL:EXT:artless/locallang.xml:A.labels.timePeriod;6;;3-3-3,
 				tx_artless_categories,
-				tx_artless_links,
+				tx_artless_relatedpages,
 				keywords, description,
 			--div--;LLL:EXT:cms/locallang_tca.xml:pages.tabs.files,',
 			$settings['showitem']
@@ -194,8 +191,6 @@ foreach ($TCA['pages']['types'] as $pageType => &$settings) {
 	
 }
 
-$TCA['pages']['columns']['media']['config']['size'] = 10;
-$TCA['pages']['columns']['media']['config']['maxitems'] = 100;
 
 t3lib_extMgm::addStaticFile($_EXTKEY,'static/artless_typoscript_library/', 'Artless TypoScript Library');
 
