@@ -1,1 +1,0 @@
-A.view.div.PageListLatestItem =< A.view.div.PageListItem

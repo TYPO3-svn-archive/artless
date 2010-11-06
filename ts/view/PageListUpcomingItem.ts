@@ -1,1 +1,0 @@
-A.view.div.PageListUpcomingItem =< A.view.div.PageListItem
