@@ -1,5 +1,5 @@
-A.element.h1.SiteTitle = TEXT
-A.element.h1.SiteTitle {
+A.res.SiteTitle = TEXT
+A.res.SiteTitle {
 
 	wrap = <h1 class="A_sitetitle">|</h1>
 	value < sitetitle

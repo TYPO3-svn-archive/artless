@@ -1,11 +1,11 @@
-A.element.ul.Menu = HMENU
-A.element.ul.Menu {
+A.res.Menu = HMENU
+A.res.Menu {
 
 	1 = TMENU
 	1 {
 		
 		noBlur = 1
-		wrap = <ul class="A_menu clearfix">|</ul>
+		wrap = <ul class="A_menu">|</ul>
 		
 		NO = 1
 		NO {

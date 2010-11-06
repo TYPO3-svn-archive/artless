@@ -1,5 +1,5 @@
-A.element.img.ThumbnailNotFound =< A.element.img.Thumbnail
-A.element.img.ThumbnailNotFound {
+A.res.ThumbnailNotFound =< A.res.Thumbnail
+A.res.ThumbnailNotFound {
 	
 	file = EXT:artless/img/thumbnail-not-found.jpg
 	

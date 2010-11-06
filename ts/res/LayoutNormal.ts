@@ -1,16 +1,16 @@
-A.res.div.LayoutNormal = COA
-A.res.div.LayoutNormal {
+A.res.LayoutNormal = COA
+A.res.LayoutNormal {
 
-	wrap = <div class="A_container">|</div>
+	wrap = <div class="A_layoutnormal">|</div>
 	
-	100 =< A.element.div.Header
+	100 =< A.res.Header
 	
-	200 =< A.element.hr.HorizontalRule
+	200 =< A.res.Line
 	
-	300 =< A.element.div.Content
+	300 =< A.res.Content
 	
-	400 =< A.element.hr.HorizontalRule
+	400 =< A.res.Line
 	
-	500 =< A.element.div.Footer
+	500 =< A.res.Footer
 		
 }

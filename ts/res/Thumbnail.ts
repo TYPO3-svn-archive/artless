@@ -1,7 +1,5 @@
-A.element.img.Thumbnail = IMAGE
-A.element.img.Thumbnail {
-	
-	
+A.res.Thumbnail = IMAGE
+A.res.Thumbnail {
 	
 	file {
 		import = uploads/media/
@@ -12,7 +10,7 @@ A.element.img.Thumbnail {
 	}
 	
 	stdWrap {
-		wrap = <p class="A_thumbnail">|</p>
+		wrap = <div class="A_thumbnail">|</div>
 		typolink < A.lib.typolink.PageLink
 		fieldRequired = media
 	}
