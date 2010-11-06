@@ -1,5 +1,5 @@
-A.element.span.Date = TEXT
-A.element.span.Date {
+A.res.Date = TEXT
+A.res.Date {
 	
 	innerWrap = <span class="A_date">|</span>
 	

@@ -1,5 +1,5 @@
-A.element.title.BrowserTitle = COA
-A.element.title.BrowserTitle {
+A.res.BrowserTitle = COA
+A.res.BrowserTitle {
 	
 	wrap = <title>|</title>
 	
