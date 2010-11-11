@@ -1,5 +1,5 @@
-page = PAGE
-page {
+A.c.Normal = PAGE
+A.c.Normal {
 
 	### favicon ###
 	shortcutIcon = favicon.ico
@@ -29,8 +29,8 @@ page {
 	
 	### custom title and RSS menu ###
 	headerData {
-		100 =< A.res.BrowserTitle
-		200 =< A.res.RSSMenu
+		100 =< A.h.BrowserTitle
+		200 =< A.h.RSSMenu
 	}
 	
 	### CSS ###
@@ -50,29 +50,24 @@ page {
 		textOverflow = EXT:artless/js/jquery.text-overflow.min.js
 	}
 	
-	### custom body tag: alias or uid is value of id-tag ###
+	### custom body tag: uid is value of id-tag ###
 	bodyTag >
 	bodyTagCObject = TEXT
 	bodyTagCObject {
-		field = alias // uid
+		field = uid
 		wrap = <body id="A_page-|">
 	}
 	
-	100 =< A.res.LayoutNormal
+	wrap = <div class="A_container A_normal">|</div>
+	
+	100 =< A.h.Header
+	
+	200 =< A.h.Line
+	
+	300 =< A.v.PageSingleNormal
+	
+	400 =< A.h.Line
+	
+	500 =< A.h.Footer
 	
 }
-
-
-[globalVar = TSFE:page|layout = 1]
-
-page.100 =< A.res.Layout1
-
-[globalVar = TSFE:page|layout = 2]
-
-page.100 =< A.res.Layout2
-
-[globalVar = TSFE:page|layout = 3]
-
-page.100 =< A.res.Layout3
-
-[global]
