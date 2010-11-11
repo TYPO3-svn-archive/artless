@@ -1,5 +1,5 @@
-A.view.div.PageListBrowsable =< A.view.div.PageList
-A.view.div.PageListBrowsable {
+A.v.PageListBrowsable =< A.v.PageList
+A.v.PageListBrowsable {
 	
 	wrap = <div class="A_pagelistbrowsable A_pagelist">|</div>
 	
@@ -14,6 +14,6 @@ A.view.div.PageListBrowsable {
 		prioriCalc = intval
 	}
 	
-	stdWrap.append =< A.element.div.PageBrowser
+	stdWrap.append =< A.v.PageBrowser
 	
 }

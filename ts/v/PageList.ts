@@ -1,5 +1,5 @@
-A.view.div.PageList = HMENU
-A.view.div.PageList {
+A.v.PageList = HMENU
+A.v.PageList {
 	
 	wrap = <div class="A_pagelist">|</div>
 	
@@ -16,7 +16,7 @@ A.view.div.PageList {
 			
 			doNotShowLink = 1
 			
-			before.cObject =< A.view.div.PageListItem
+			before.cObject =< A.v.PageListItem
 			
 		}
 		

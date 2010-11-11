@@ -1,0 +1,1 @@
+A.v.PageSingleLayout1 =< A.v.PageSingleNormal
