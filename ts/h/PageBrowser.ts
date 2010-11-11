@@ -1,5 +1,5 @@
-A.element.div.PageBrowser = CONTENT
-A.element.div.PageBrowser {
+A.v.PageBrowser = CONTENT
+A.v.PageBrowser {
 	
 	wrap = <div class="A_pagebrowser">|</div>
 	

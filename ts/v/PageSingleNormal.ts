@@ -19,6 +19,6 @@ A.v.PageSingleNormal {
 	
 	800 =< A.m.Page.contentBorder
 	
-	# 900 =< A.v.Comment
+	900 =< A.v.CommentList
 	
 }
