@@ -1,7 +1,6 @@
-# library
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/lib/PageLink.ts">
+# view helpers
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/PageLink.ts">
 
-# resources
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/BrowserTitle.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/Date.ts">
 

@@ -1,4 +1,4 @@
-A.lib.PageLink {
+A.h.PageLink {
 	
 	parameter.field = uid
 	

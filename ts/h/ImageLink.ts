@@ -1,4 +1,4 @@
-A.lib.ImageLink {
+A.h.ImageLink {
 
 	typolink {
 	
