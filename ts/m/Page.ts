@@ -3,18 +3,19 @@ A.m.Page {
 	title = TEXT
 	title {
 		field = title
-		wrap = <h1>|</h1>
+		wrap = <h1 class="A_title">|</h1>
 	}
 	
 	subtitle = TEXT
 	subtitle {
 		field = subtitle
 		wrap = <h2>|</h2>
+		required = 1
 	}
 	
-	thumbnail =< A.element.img.Thumbnail
+	thumbnail =< A.h.Thumbnail
 	
-	thumbnailRequired =< A.element.img.RequiredThumbnail
+	thumbnailRequired =< A.h.ThumbnailRequired
 	
 	abstract = TEXT
 	abstract {
@@ -22,21 +23,22 @@ A.m.Page {
 		required = 1
 		# crop = 200 | ... | 1
 		parseFunc =< lib.parseFunc_RTE
+		wrap = <div class="A_abstract">|</div>
 	}
 	
-	dateCreation =< A.element.span.Date
+	dateCreation =< A.h.Date
 	dateCreation {
 		field = crdate
 		fieldRequired = crdate
 	}
 	
-	dateStart =< A.element.span.Date
+	dateStart =< A.h.Date
 	dateStart {
 		field = tx_artless_startdate
 		fieldRequired = tx_artless_startdate
 	}
 	
-	dateEnd =< A.element.span.Date
+	dateEnd =< A.h.Date
 	dateEnd {
 		field = tx_artless_enddate
 		fieldRequired = tx_artless_enddate
@@ -119,5 +121,23 @@ A.m.Page {
 		special.value.field = tx_artless_links
 		stdWrap.fieldRequired = tx_artless_links
 	}
+	
+	contentNormal < styles.content.get
+	contentNormal {
+		wrap = <div class="A_contentnormal">|</div>
+		required = 1
+	}
+	
+	contentLeft < styles.content.getLeft
+	contentLeft {
+		wrap = <div class="A_contentleft">|</div>
+		required = 1
+	}
+	
+	contentRight < styles.content.getRight
+	contentRight.wrap = <div class="A_contentright">|</div>
+	
+	contentBorder < styles.content.getBorder
+	contentBorder.wrap = <div class="A_contentborder">|</div>
 	
 }
