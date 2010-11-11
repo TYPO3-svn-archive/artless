@@ -6,12 +6,12 @@ A.v.PageListItem {
 	100 =< A.m.Page.title
 	100 {
 		wrap = <h3>|</h3>
-		typolink < A.h.PageLink
+		typolink < A.h.LinkToPage
 	}
 	
 	200 =< A.m.Page.thumbnail
 	200 {
-		stdWrap.typolink < A.h.PageLink
+		stdWrap.typolink < A.h.LinkToPage
 	}
 	
 	300 =< A.m.Page.abstract

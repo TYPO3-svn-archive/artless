@@ -1,19 +1,15 @@
-# view helpers
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/PageLink.ts">
-
+# helpers
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/LinkToPage.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/LinkToImage.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/LinkImage.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/BrowserTitle.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/Date.ts">
-
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/RelatedPages.ts">
-
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/RSSMenu.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/SiteTitle.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/PageTitle.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/Line.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/Menu.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/MenuMain.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/MenuLanguage.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/Pager.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/RelatedPages.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/RelatedPagesMenu.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/ImageResource.ts">
@@ -29,6 +25,7 @@
 
 # models
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/m/Page.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/m/Comment.ts">
 
 # views
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageListItem.ts">
@@ -46,6 +43,8 @@
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageSingleLayout1.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageSingleLayout2.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageSingleLayout3.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/CommentListItem.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/CommentList.ts">
 
 # controllers
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/c/Normal.ts">
