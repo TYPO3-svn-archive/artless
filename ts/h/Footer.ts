@@ -1,9 +1,9 @@
-A.element.div.Footer = COA
-A.element.div.Footer {
+A.h.Footer = COA
+A.h.Footer {
 
 	wrap = <div class="A_footer">|</div>
 	
-	100 =< A.element.ul.Menu
+	100 =< A.h.Menu
 	100 {
 		
 		special = directory

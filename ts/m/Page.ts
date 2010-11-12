@@ -9,7 +9,7 @@ A.m.Page {
 	subtitle = TEXT
 	subtitle {
 		field = subtitle
-		wrap = <h2>|</h2>
+		wrap = <h2 class="A_subtitle">|</h2>
 		required = 1
 	}
 	
