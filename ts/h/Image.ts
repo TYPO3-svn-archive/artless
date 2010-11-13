@@ -1,5 +1,5 @@
-A.element.img.Image = IMAGE
-A.element.img.Image {
+A.h.Image = IMAGE
+A.h.Image {
 	
 	wrap = <p class="A_image">|</p>
 	

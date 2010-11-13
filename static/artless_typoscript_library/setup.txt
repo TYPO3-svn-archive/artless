@@ -45,6 +45,7 @@
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageSingleLayout3.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/CommentListItem.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/CommentList.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/CommentForm.ts">
 
 # controllers
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/c/Normal.ts">

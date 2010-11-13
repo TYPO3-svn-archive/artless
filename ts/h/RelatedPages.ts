@@ -1,5 +1,5 @@
-A.element.ul.RelatedPages = HMENU
-A.element.ul.RelatedPages {
+A.h.RelatedPages = HMENU
+A.h.RelatedPages {
 	
 	special = list
 	special.value.field = tx_artless_categories

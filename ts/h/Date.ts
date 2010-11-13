@@ -9,7 +9,7 @@ A.h.Date {
 	strftime = {$A.dateFormat.creationDate}
 	insertData = 1
 	
-	# strftime = {LLL:EXT:artless/locallang.xml:A.element.span.CreationDate.date}
+	# strftime = {LLL:EXT:artless/locallang.xml:A...CreationDate.date}
 	# stdWrap.insertData = 1
 	
 }

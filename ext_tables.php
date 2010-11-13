@@ -119,6 +119,13 @@ $tempColumns = array(
 			'rows' => '3',
 		)
 	),
+	'tx_artless_enablecomments' => array(
+		'exclude' => 1,
+		'label' => 'LLL:EXT:artless/locallang_db.xml:pages.tx_artless_enablecomments',
+		'config' => array(
+			'type' => 'check',
+		)
+	),
 );
 
 t3lib_div::loadTCA('pages');
@@ -161,7 +168,8 @@ $TCA['pages']['types']['1']['showitem'] = str_replace(
 	'abstract;;;richtext[]:rte_transform[mode=ts],
 	--palette--;LLL:EXT:artless/locallang.xml:A.labels.timePeriod;6;;3-3-3,
 	tx_artless_categories,
-	tx_artless_relatedpages,',
+	tx_artless_relatedpages,
+	tx_artless_enablecomments,',
 	$TCA['pages']['types']['1']['showitem']
 );
 
@@ -177,6 +185,7 @@ foreach ($TCA['pages']['types'] as $pageType => &$settings) {
 				--palette--;LLL:EXT:artless/locallang.xml:A.labels.timePeriod;6;;3-3-3,
 				tx_artless_categories,
 				tx_artless_relatedpages,
+				tx_artless_enablecomments,
 				keywords, description,
 			--div--;LLL:EXT:cms/locallang_tca.xml:pages.tabs.files,',
 			$settings['showitem']

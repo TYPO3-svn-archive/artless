@@ -19,6 +19,12 @@ A.v.PageSingleNormal {
 	
 	800 =< A.m.Page.contentBorder
 	
-	900 =< A.v.CommentList
+	900 = COA
+	900 {
+		wrap = <div class="A_comments">|</div>
+		stdWrap.fieldRequired = tx_artless_enablecomments
+		100 =< A.v.CommentList
+		200 =< A.v.CommentForm
+	}
 	
 }

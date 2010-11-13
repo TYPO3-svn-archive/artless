@@ -1,5 +1,5 @@
-A.view.div.PageListUpcoming =< A.view.div.PageList
-A.view.div.PageListUpcoming {
+A.v.PageListUpcoming =< A.v.PageList
+A.v.PageListUpcoming {
 	
 	wrap = <div class="A_pagelistupcoming A_pagelist">|</div>
 	
@@ -11,7 +11,7 @@ A.view.div.PageListUpcoming {
 		
 		alternativeSortingField = tx_artlesspages_startdate desc
 		
-		NO.before.cObject =< A.view.div.PageListUpcomingItem
+		NO.before.cObject =< A.v.PageListUpcomingItem
 		
 	}
 	

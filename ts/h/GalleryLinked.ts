@@ -1,11 +1,11 @@
-A.element.div.GalleryLinked =< A.element.div.Gallery
-A.element.div.GalleryLinked {
+A.h.GalleryLinked =< A.h.Gallery
+A.h.GalleryLinked {
 
 	wrap = <div class="A_gallerylinked A_gallery">|</div>
 	
 	split {
 		
-		1.100.stdWrap.typolink.parameter.cObject =< A.element.img.ImageResource
+		1.100.stdWrap.typolink.parameter.cObject =< A.h.ImageResource
 		
 	}
 	

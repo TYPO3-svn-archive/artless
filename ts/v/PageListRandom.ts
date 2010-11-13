@@ -1,5 +1,5 @@
-A.view.div.PageListRandom =< A.view.div.PageList
-A.view.div.PageListRandom {
+A.v.PageListRandom =< A.v.PageList
+A.v.PageListRandom {
 	
 	wrap = <div class="A_pagelistrandom A_pagelist">|</div>
 	
@@ -9,7 +9,7 @@ A.view.div.PageListRandom {
 		
 		alternativeSortingField = rand()
 		
-		NO.before.cObject =< A.view.div.PageListRandomItem
+		NO.before.cObject =< A.v.PageListRandomItem
 		
 	}
 	

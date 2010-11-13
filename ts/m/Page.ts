@@ -78,7 +78,7 @@ A.m.Page {
 		}
 	}
 	
-	authors =< A.element.span.RelatedPages
+	authors =< A.h.RelatedPages
 	authors {
 		stdWrap.outerWrap = <p class="A_authors">|</p>
 		special.value.field = tx_artless_authors
@@ -90,33 +90,33 @@ A.m.Page {
 		}
 	}
 	
-	categories =< A.element.span.RelatedPages
+	categories =< A.h.RelatedPages
 	categories {
 		wrap = <p class="A_categories">|</p>
 		special.value.field = tx_artless_categories
 		stdWrap.fieldRequired = tx_artless_categories
 	}
 	
-	links =< A.element.span.RelatedPages
+	links =< A.h.RelatedPages
 	links {
 		wrap = <p class="A_links">|</p>
 		special.value.field = tx_artless_links
 		stdWrap.fieldRequired = tx_artless_links
 	}
 	
-	authors =< A.element.ul.RelatedPages
+	authors =< A.h.RelatedPages
 	authors {
 		special.value.field = tx_artless_authors
 		stdWrap.fieldRequired = tx_artless_authors
 	}
 	
-	categories =< A.element.ul.RelatedPages
+	categories =< A.h.RelatedPages
 	categories {
 		special.value.field = tx_artless_categories
 		stdWrap.fieldRequired = tx_artless_categories
 	}
 	
-	links =< A.element.ul.RelatedPages
+	links =< A.h.RelatedPages
 	links {
 		special.value.field = tx_artless_links
 		stdWrap.fieldRequired = tx_artless_links

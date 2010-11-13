@@ -1,1 +1,1 @@
-A.view.div.PageListRandomItem =< A.view.div.PageListItem
+A.v.PageListRandomItem =< A.v.PageListItem

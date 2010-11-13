@@ -1,5 +1,5 @@
-A.view.div.PageListLatest =< A.view.div.PageList
-A.view.div.PageListLatest {
+A.v.PageListLatest =< A.v.PageList
+A.v.PageListLatest {
 	
 	wrap = <div class="A_pagelistlatest A_pagelist">|</div>
 	
@@ -11,7 +11,7 @@ A.view.div.PageListLatest {
 		
 		alternativeSortingField = crdate desc
 		
-		NO.before.cObject =< A.view.div.PageListLatestItem
+		NO.before.cObject =< A.v.PageListLatestItem
 		
 	}
 	

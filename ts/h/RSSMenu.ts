@@ -1,5 +1,5 @@
-A.element.link.RSSMenu = HMENU
-A.element.link.RSSMenu {
+A.h.RSSMenu = HMENU
+A.h.RSSMenu {
 	
 	special = directory
 	special.value = {$A.rssStoragePid}
