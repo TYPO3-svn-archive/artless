@@ -5,13 +5,13 @@ A.h.BrowserTitle {
 	
 	100 = TEXT
 	100 {
-		value < sitetitle
+		field = title
 	}
 	
 	200 = TEXT
 	200 {
-		field = title
-		noTrimWrap = | — ||
+		value < sitetitle
+		noTrimWrap = | - ||
 	}
 	
 }
