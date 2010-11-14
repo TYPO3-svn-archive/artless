@@ -1,7 +1,7 @@
 A.h.Image = IMAGE
 A.h.Image {
 	
-	wrap = <p class="A_image">|</p>
+	wrap = <div class="A_image">|</div>
 	
 	file {
 		import = uploads/media/

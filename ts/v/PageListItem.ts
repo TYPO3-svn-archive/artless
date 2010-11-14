@@ -5,7 +5,7 @@ A.v.PageListItem {
 	
 	100 =< A.m.Page.title
 	100 {
-		wrap = <h3>|</h3>
+		wrap = <h3 class="A_pagetitle">|</h3>
 		typolink < A.h.LinkToPage
 	}
 	
