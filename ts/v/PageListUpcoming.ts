@@ -9,7 +9,7 @@ A.v.PageListUpcoming {
 	
 	1 {
 		
-		alternativeSortingField = tx_artlesspages_startdate desc
+		alternativeSortingField = tx_artless_startdate desc
 		
 		NO.before.cObject =< A.v.PageListUpcomingItem
 		
