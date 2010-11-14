@@ -11,7 +11,7 @@ A.h.Thumbnail {
 	
 	stdWrap {
 		outerWrap = <div class="A_thumbnail">|</div>
-		fieldRequired = media
+		# fieldRequired = media
 	}
 	
 }
