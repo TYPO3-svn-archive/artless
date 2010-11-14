@@ -89,8 +89,9 @@ A.m.Page {
 	
 	authorPages =< A.h.RelatedPages
 	authorPages {
-		stdWrap.outerWrap = <div class="A_pageauthors">|</div>
+		stdWrap.wrap = <div class="A_pageauthorpages">|</div>
 		special.value.field = tx_artless_authorpages
+		
 		stdWrap.fieldRequired = tx_artless_authorpages
 		stdWrap.prepend = TEXT
 		stdWrap.prepend {
