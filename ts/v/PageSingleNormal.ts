@@ -2,25 +2,16 @@ A.v.PageSingleNormal = COA
 A.v.PageSingleNormal {
 	
 	wrap = <div class="A_pagesinglenormal">|</div>
+
+	# "Page header"	
+	100 =< A.m.Page.header
 	
-	100 =< A.m.Page.title
+	# "Page content"
+	200 =< A.m.Page.content
 	
-	200 =< A.m.Page.subtitle
-	
-	300 =< A.m.Page.thumbnail
-	
-	400 =< A.m.Page.abstract
-	
-	500 =< A.m.Page.contentLeft
-	
-	600 =< A.m.Page.contentNormal
-	
-	700 =< A.m.Page.contentRight
-	
-	800 =< A.m.Page.contentBorder
-	
-	900 = COA
-	900 {
+	# "Additional elements"
+	300 = COA
+	300 {
 		wrap = <div class="A_comments">|</div>
 		stdWrap.fieldRequired = tx_artless_enablecomments
 		100 =< A.v.CommentList

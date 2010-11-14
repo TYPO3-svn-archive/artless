@@ -1,15 +1,24 @@
 A.m.Page {
+
+	header = COA
+	header {
+		wrap = <div class="A_pageheader">|</div>
+		100 =< A.m.Page.title
+		200 =< A.m.Page.subtitle
+		300 =< A.m.Page.thumbnail
+		400 =< A.m.Page.abstract
+	}
 	
 	title = TEXT
 	title {
 		field = title
-		wrap = <h1 class="A_title">|</h1>
+		wrap = <h1 class="A_pagetitle">|</h1>
 	}
 	
 	subtitle = TEXT
 	subtitle {
 		field = subtitle
-		wrap = <h2 class="A_subtitle">|</h2>
+		wrap = <h2 class="A_pagesubtitle">|</h2>
 		required = 1
 	}
 	
@@ -19,11 +28,11 @@ A.m.Page {
 	
 	abstract = TEXT
 	abstract {
+		wrap = <div class="A_pageabstract">|</div>
 		field = abstract
 		required = 1
 		# crop = 200 | ... | 1
 		parseFunc =< lib.parseFunc_RTE
-		wrap = <div class="A_abstract">|</div>
 	}
 	
 	dateCreation =< A.h.Date
@@ -46,11 +55,11 @@ A.m.Page {
 	
 	datePeriod = COA
 	datePeriod {
-		wrap = <p class="A_dateperiod">|</p>
+		wrap = <div class="A_pagedateperiod">|</div>
 		100 =< A.model.Page.dateStart
 		200 =< A.model.Page.dateEnd
 		200 {
-			noTrimWrap = | – ||
+			noTrimWrap = | - ||
 			# hide this for "one day periods"
 		}
 		fieldRequired = tx_artless_startdate
@@ -78,11 +87,11 @@ A.m.Page {
 		}
 	}
 	
-	authors =< A.h.RelatedPages
-	authors {
-		stdWrap.outerWrap = <p class="A_authors">|</p>
-		special.value.field = tx_artless_authors
-		stdWrap.fieldRequired = tx_artless_authors
+	authorPages =< A.h.RelatedPages
+	authorPages {
+		stdWrap.outerWrap = <div class="A_pageauthors">|</div>
+		special.value.field = tx_artless_authorpages
+		stdWrap.fieldRequired = tx_artless_authorpages
 		stdWrap.prepend = TEXT
 		stdWrap.prepend {
 			data = LLL:EXT:artless_pages/locallang_db.xml:pages.tx_artless_authors
@@ -92,14 +101,14 @@ A.m.Page {
 	
 	categories =< A.h.RelatedPages
 	categories {
-		wrap = <p class="A_categories">|</p>
+		wrap = <div class="A_pagecategories">|</div>
 		special.value.field = tx_artless_categories
 		stdWrap.fieldRequired = tx_artless_categories
 	}
 	
 	links =< A.h.RelatedPages
 	links {
-		wrap = <p class="A_links">|</p>
+		wrap = <div class="A_pagelinks">|</div>
 		special.value.field = tx_artless_links
 		stdWrap.fieldRequired = tx_artless_links
 	}
@@ -139,5 +148,13 @@ A.m.Page {
 	
 	contentBorder < styles.content.getBorder
 	contentBorder.wrap = <div class="A_contentborder">|</div>
+	
+	content = COA
+	content {
+		100 =< A.m.Page.contentLeft
+		200 =< A.m.Page.contentNormal
+		300 =< A.m.Page.contentRight
+		400 =< A.m.Page.contentBorder
+	}
 	
 }
