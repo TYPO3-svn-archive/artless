@@ -6,10 +6,6 @@ A.h.Image {
 	file {
 		import = uploads/media/
 		import.current = 1
-		# import {
-			# field = media
-			# listNum = 0
-		# }
 	}
 	
 	stdWrap.append = TEXT

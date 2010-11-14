@@ -148,6 +148,7 @@ A.m.Page {
 	
 	content = COA
 	content {
+		wrap = <div class="A_content">|</div>
 		100 =< A.m.Page.contentLeft
 		200 =< A.m.Page.contentNormal
 		300 =< A.m.Page.contentRight
