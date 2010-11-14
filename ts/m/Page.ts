@@ -11,14 +11,14 @@ A.m.Page {
 	
 	title = TEXT
 	title {
-		field = title
 		wrap = <h1 class="A_pagetitle">|</h1>
+		field = title
 	}
 	
 	subtitle = TEXT
 	subtitle {
-		field = subtitle
 		wrap = <h2 class="A_pagesubtitle">|</h2>
+		field = subtitle
 		required = 1
 	}
 	
@@ -112,42 +112,38 @@ A.m.Page {
 		special.value.field = tx_artless_links
 		stdWrap.fieldRequired = tx_artless_links
 	}
-	
-	authors =< A.h.RelatedPages
-	authors {
-		special.value.field = tx_artless_authors
-		stdWrap.fieldRequired = tx_artless_authors
-	}
-	
-	categories =< A.h.RelatedPages
-	categories {
-		special.value.field = tx_artless_categories
-		stdWrap.fieldRequired = tx_artless_categories
-	}
-	
-	links =< A.h.RelatedPages
-	links {
-		special.value.field = tx_artless_links
-		stdWrap.fieldRequired = tx_artless_links
-	}
-	
+		
 	contentNormal < styles.content.get
 	contentNormal {
-		wrap = <div class="A_contentnormal">|</div>
-		required = 1
+		stdWrap {
+			wrap = <div class="A_contentnormal">|</div>
+			required = 1
+		}
 	}
 	
 	contentLeft < styles.content.getLeft
 	contentLeft {
-		wrap = <div class="A_contentleft">|</div>
-		required = 1
+		stdWrap {
+			wrap = <div class="A_contentleft">|</div>
+			required = 1
+		}
 	}
 	
 	contentRight < styles.content.getRight
-	contentRight.wrap = <div class="A_contentright">|</div>
+	contentRight {
+		stdWrap {
+			wrap = <div class="A_contentright">|</div>
+			required = 1
+		}
+	}
 	
 	contentBorder < styles.content.getBorder
-	contentBorder.wrap = <div class="A_contentborder">|</div>
+	contentBorder {
+		stdWrap {
+			wrap = <div class="A_contentborder">|</div>
+			required = 1
+		}
+	}
 	
 	content = COA
 	content {
