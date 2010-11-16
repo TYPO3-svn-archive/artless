@@ -1,73 +1,58 @@
 # helpers
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/LinkToPage.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/LinkToImage.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/LinkImage.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/BrowserTitle.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/linkToPage.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/linkToImage.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/Date.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/RSSMenu.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/SiteTitle.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/Line.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/Menu.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/MenuMain.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/MenuLanguage.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/RelatedPages.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/RelatedPagesMenu.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/ImageResource.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/Image.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/Thumbnail.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/ThumbnailNotFound.ts">
+	<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/ThumbnailNotFound.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/ThumbnailRequired.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/Header.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/Footer.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/PageBrowser.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/Gallery.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/h/GalleryLinked.ts">
 
 # models
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/m/Site.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/m/Page.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/m/Content.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/m/Comment.ts">
 
 # views
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageListItem.ts">
+	<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageListLatestItem.ts">
+	<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageListRandomItem.ts">
+	<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageListUpcomingItem.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageList.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageListBrowsable.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageListLatestItem.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageListLatest.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageListRandomItem.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageListRandom.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageListUpcomingItem.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageListUpcoming.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageListRelatedItem.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageListRelated.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageSingleNormal.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageSingleLayout1.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageSingleLayout2.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageSingleLayout3.ts">
+	<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageListBrowsable.ts">
+	<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageListLatest.ts">
+	<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageListRandom.ts">
+	<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageListUpcoming.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/ContentLeft.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/ContentNormal.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/ContentRight.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/ContentBorder.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/Content.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/CommentListItem.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/CommentList.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/CommentForm.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/Comments.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageSingleNormal.ts">
+	<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageSingleLayout1.ts">
+	<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageSingleLayout2.ts">
+	<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/v/PageSingleLayout3.ts">
 
 # controllers
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/c/Normal.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/c/Layout1.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/c/Layout2.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/c/Layout3.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/c/normal.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/c/layout1.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/c/layout2.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/c/layout3.ts">
 
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/c/config.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/c/plugin.ts">
-
-page < A.c.Normal
-
-[globalVar = TSFE:page|layout = 1]
-
-page < A.c.Layout1
-
-[globalVar = TSFE:page|layout = 2]
-
-page < A.c.Layout2
-
-[globalVar = TSFE:page|layout = 3]
-
-page < A.c.Layout3
-
-[global]
+# setup code
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/config.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/plugin.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: EXT:artless/ts/page.ts">
