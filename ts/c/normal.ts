@@ -1,10 +1,8 @@
-A.c.Normal = PAGE
-A.c.Normal {
-
-	### favicon ###
+A.c.normal = PAGE
+A.c.normal {
+	
 	shortcutIcon = favicon.ico
 	
-	### config ###
 	config {
 		
 		doctype = xhtml_trans
@@ -29,11 +27,10 @@ A.c.Normal {
 	
 	### custom title and RSS menu ###
 	headerData {
-		100 =< A.h.BrowserTitle
+		100 =< A.m.Site.browserTitle
 		200 =< A.h.RSSMenu
 	}
 	
-	### CSS ###
 	includeCSS {		
 		screen = fileadmin/css/screen.css
 		screen.media = screen, projection
@@ -44,30 +41,25 @@ A.c.Normal {
 		ie.allWrap = <!--[if IE]>|<![endif]-->
 	}
 	
-	### JavaScript ###
 	includeJS {
 		jQuery = EXT:artless/js/jquery-1.4.2.min.js
 		textOverflow = EXT:artless/js/jquery.text-overflow.min.js
 	}
 	
-	### custom body tag: uid is value of id-tag ###
+	# custom body tag
 	bodyTag >
 	bodyTagCObject = TEXT
 	bodyTagCObject {
-		field = uid
-		wrap = <body id="A_page-|">
+		value = <body id="A_page{page:uid}">
+		insertData = 1
 	}
 	
 	wrap = <div class="A_container A_normal">|</div>
 	
-	100 =< A.h.Header
-	
+	100 =< A.m.Site.header
 	200 =< A.h.Line
-	
 	300 =< A.v.PageSingleNormal
-	
 	400 =< A.h.Line
-	
-	500 =< A.h.Footer
+	500 =< A.m.Site.footer
 	
 }
