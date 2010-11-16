@@ -1,1 +1,1 @@
-A.h.LinkToImage.typolink.parameter.cObject =< A.h.ImageResource
+A.h.linkToImage.typolink.parameter.cObject =< A.h.ImageResource

@@ -1,4 +1,4 @@
-A.h.LinkToPage {
+A.h.linkToPage {
 	
 	parameter.field = uid
 	
