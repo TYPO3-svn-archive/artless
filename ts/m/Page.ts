@@ -1,23 +1,16 @@
 A.m.Page {
-
-	header = COA
-	header {
-		wrap = <div class="A_pageheader">|</div>
-		100 =< A.m.Page.title
-		200 =< A.m.Page.subtitle
-		300 =< A.m.Page.thumbnail
-		400 =< A.m.Page.abstract
-	}
+	
+	# attributes of the table "pages"
 	
 	title = TEXT
 	title {
-		wrap = <h1 class="A_pagetitle">|</h1>
+		wrap = <h1 class="A_page-title">|</h1>
 		field = title
 	}
 	
 	subtitle = TEXT
 	subtitle {
-		wrap = <h2 class="A_pagesubtitle">|</h2>
+		wrap = <h2 class="A_page-subtitle">|</h2>
 		field = subtitle
 		required = 1
 	}
@@ -28,7 +21,7 @@ A.m.Page {
 	
 	abstract = TEXT
 	abstract {
-		wrap = <div class="A_pageabstract">|</div>
+		wrap = <div class="A_page-abstract">|</div>
 		field = abstract
 		required = 1
 		# crop = 200 | ... | 1
@@ -53,30 +46,53 @@ A.m.Page {
 		fieldRequired = tx_artless_enddate
 	}
 	
-	datePeriod = COA
-	datePeriod {
-		wrap = <div class="A_pagedateperiod">|</div>
-		100 =< A.model.Page.dateStart
-		200 =< A.model.Page.dateEnd
-		200 {
-			noTrimWrap = | - ||
-			# hide this for "one day periods"
-		}
-		fieldRequired = tx_artless_startdate
-	}
-	
 	author = TEXT
 	author {
+		wrap = <span class="A_page-author">|</span>
 		field = author
 	}
 	
 	authorEmail = TEXT
 	authorEmail {
+		wrap = <span class="A_page-authoremail">|</span>
 		field = author_email
 	}
 	
-	authorMailto < .author
+	authorPages =< A.h.RelatedPages
+	authorPages {
+		wrap = <div class="A_page-authorpages">|</div>
+		special.value.field = tx_artless_authorpages
+		stdWrap.fieldRequired = tx_artless_authorpages
+	}
+	
+	categories =< A.h.RelatedPages
+	categories {
+		wrap = <div class="A_page-categories">|</div>
+		special.value.field = tx_artless_categories
+		stdWrap.fieldRequired = tx_artless_categories
+	}
+	
+	relatedPages =< A.h.RelatedPages
+	relatedPages {
+		wrap = <div class="A_page-relatedpages">|</div>
+		special.value.field = tx_artless_relatedpages
+		stdWrap.fieldRequired = tx_artless_relatedpages
+	}
+	
+	# special properties
+	
+	header = COA
+	header {
+		wrap = <div class="A_page-header">|</div>
+		100 =< A.m.Page.title
+		200 =< A.m.Page.subtitle
+		300 =< A.m.Page.thumbnail
+		400 =< A.m.Page.abstract
+	}
+	
+	authorMailto =< A.m.Page.author
 	authorMailto {
+		wrap = <span class="A_page-authormailto">|</span>
 		typolink {
 			parameter.field = author_email
 			ATagParams.cObject = TEXT
@@ -87,72 +103,16 @@ A.m.Page {
 		}
 	}
 	
-	authorPages =< A.h.RelatedPages
-	authorPages {
-		stdWrap.wrap = <div class="A_pageauthorpages">|</div>
-		special.value.field = tx_artless_authorpages
-		
-		stdWrap.fieldRequired = tx_artless_authorpages
-		stdWrap.prepend = TEXT
-		stdWrap.prepend {
-			data = LLL:EXT:artless_pages/locallang_db.xml:pages.tx_artless_authors
-			wrap = <span class="A_prefix">|</span>
+	datePeriod = COA
+	datePeriod {
+		wrap = <div class="A_pagedateperiod">|</div>
+		100 =< A.model.Page.dateStart
+		200 =< A.model.Page.dateEnd
+		200 {
+			noTrimWrap = | - ||
+			# hide this for "one day periods"
 		}
-	}
-	
-	categories =< A.h.RelatedPages
-	categories {
-		wrap = <div class="A_pagecategories">|</div>
-		special.value.field = tx_artless_categories
-		stdWrap.fieldRequired = tx_artless_categories
-	}
-	
-	links =< A.h.RelatedPages
-	links {
-		wrap = <div class="A_pagelinks">|</div>
-		special.value.field = tx_artless_links
-		stdWrap.fieldRequired = tx_artless_links
-	}
-		
-	contentNormal < styles.content.get
-	contentNormal {
-		stdWrap {
-			wrap = <div class="A_contentnormal">|</div>
-			required = 1
-		}
-	}
-	
-	contentLeft < styles.content.getLeft
-	contentLeft {
-		stdWrap {
-			wrap = <div class="A_contentleft">|</div>
-			required = 1
-		}
-	}
-	
-	contentRight < styles.content.getRight
-	contentRight {
-		stdWrap {
-			wrap = <div class="A_contentright">|</div>
-			required = 1
-		}
-	}
-	
-	contentBorder < styles.content.getBorder
-	contentBorder {
-		stdWrap {
-			wrap = <div class="A_contentborder">|</div>
-			required = 1
-		}
-	}
-	
-	content = COA
-	content {
-		wrap = <div class="A_content">|</div>
-		100 =< A.m.Page.contentLeft
-		200 =< A.m.Page.contentNormal
-		300 =< A.m.Page.contentRight
-		400 =< A.m.Page.contentBorder
+		fieldRequired = tx_artless_startdate
 	}
 	
 }
