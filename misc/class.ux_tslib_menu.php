@@ -1,6 +1,7 @@
 <?php 
 
-class ux_tslib_menu extends tslib_menu {
+
+class ux_tslib_tmenu extends tslib_tmenu  {
 	
 	/**
 	 * Extending the function in order to give parameter additional stdWrap functionality
