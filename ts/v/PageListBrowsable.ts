@@ -14,6 +14,6 @@ A.v.PageListBrowsable {
 		prioriCalc = intval
 	}
 	
-	stdWrap.append =< A.v.PageBrowser
+	stdWrap.append =< A.h.PageBrowser
 	
 }
