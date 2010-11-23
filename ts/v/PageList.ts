@@ -1,25 +1,10 @@
-A.v.PageList = HMENU
+A.v.PageList = CONTENT
 A.v.PageList {
-	
 	wrap = <div class="A_pagelist">|</div>
-	
-	special = directory
-	special.value = {$A.pids.pageList}
-	
-	maxItems = {$A.maxItems.pageList}
-	
-	1 = TMENU
-	1 {
-		
-		NO = 1
-		NO {
-			
-			doNotShowLink = 1
-			
-			before.cObject =< A.v.PageListItem
-			
-		}
-		
+	table = pages
+	select {
+		pidInList = {$A.pids.pageList}
+		orderBy = tx_artless_startdate desc
 	}
-	
-}
+	renderObj =< A.v.PageListItem
+}	
