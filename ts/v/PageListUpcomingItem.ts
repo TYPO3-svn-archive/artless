@@ -1,1 +1,0 @@
-A.v.PageListUpcomingItem =< A.v.PageListItem

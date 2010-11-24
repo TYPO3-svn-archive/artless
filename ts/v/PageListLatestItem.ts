@@ -1,1 +1,0 @@
-A.v.PageListLatestItem =< A.v.PageListItem
