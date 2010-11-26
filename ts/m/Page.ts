@@ -81,15 +81,6 @@ A.m.Page {
 	
 	# special properties
 	
-	header = COA
-	header {
-		wrap = <div class="A_page-header">|</div>
-		100 =< A.m.Page.title
-		200 =< A.m.Page.subtitle
-		300 =< A.m.Page.thumbnail
-		400 =< A.m.Page.abstract
-	}
-	
 	authorMailto =< A.m.Page.author
 	authorMailto {
 		wrap = <span class="A_page-authormailto">|</span>
