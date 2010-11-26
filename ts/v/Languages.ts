@@ -1,5 +1,7 @@
-A.h.MenuLanguage = HMENU
-A.h.MenuLanguage {
+A.v.Languages = HMENU
+A.v.Languages {
+	
+	wrap = <div class="A_languages">|</div>
 	
 	special = language
 	special.value = {$A.language.uids}
@@ -9,7 +11,7 @@ A.h.MenuLanguage {
 	1 {
 		
 		noBlur = 1
-		wrap = <ul class="A_menulanguage A_menu">|</ul>
+		wrap = <ul class="A_menu">|</ul>
 		
 		NO = 1
 		NO {
@@ -17,13 +19,15 @@ A.h.MenuLanguage {
 			# this is shown instead of the page title
 			stdWrap.override = {$A.language.labels}
 			doNotLinkIt = 1
-			stdWrap.typolink.parameter.data = page:uid
-			stdWrap.typolink.additionalParams = {$A.language.params}
-			stdWrap.typolink.addQueryString = 1
-			stdWrap.typolink.addQueryString.exclude = L,id,cHash,no_cache
-			stdWrap.typolink.addQueryString.method = GET
-			stdWrap.typolink.useCacheHash = 1
-			stdWrap.typolink.no_cache = 0
+			stdWrap.typolink {
+				parameter.data = page:uid
+				additionalParams = {$A.language.params}
+				addQueryString = 1
+				addQueryString.exclude = L,id,cHash,no_cache
+				addQueryString.method = GET
+				useCacheHash = 1
+				no_cache = 0
+			}
 		}
 		
 		ACT < .NO
