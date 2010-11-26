@@ -1,27 +1,26 @@
-A.h.PageBrowser = CONTENT
+A.h.PageBrowser =< A.v.PageList
 A.h.PageBrowser {
 	
 	wrap = <div class="A_pagebrowser">|</div>
 	
-	table = pages
-	
 	select.selectFields.cObject = TEXT
-	select.selectFields.cObject.value = {$A.maxItems.pageListBrowsable}
+	select.selectFields.cObject.value = {$A.itemsPerPage}
 	select.selectFields.cObject {
-		wrap = CEIL(COUNT(*) / |) as counter
+		wrap = CEIL(COUNT(*) / |) as numberOfPages
 	}
 	
-	select.pidInList {
-		cObject = TEXT
-		cObject.value = {$A.pids.pageListBrowsable}
-		ifEmpty.cObject = TEXT
-		ifEmpty.cObject.data = {TSFE:id}
-	}
+	select.begin.cObject = TEXT
+	select.begin.cObject.value = 0
 	
 	renderObj =< plugin.tx_pagebrowse_pi1
 	renderObj {
-		numberOfPages.field = counter
+		numberOfPages.field = numberOfPages
 		templateFile = EXT:artless/html/tx_pagebrowse_pi1.html
+	}
+	
+	stdWrap {
+		prepend =
+		append =
 	}
 	
 }

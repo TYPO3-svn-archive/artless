@@ -6,11 +6,24 @@ A.v.PageList {
 	table = pages
 	
 	select {
-		pidInList = {$A.pids.pageList}
+		pidInList = current
 		orderBy = sorting
-		max = {$A.maxItems.pageList}
+		begin.cObject = TEXT
+		begin.cObject.value = {$A.itemsPerPage}
+		begin.cObject {
+			stdWrap.dataWrap = | * {GPvar:tx_pagebrowse_pi1|page}
+			prioriCalc = intval
+		}
+		max = {$A.itemsPerPage}
 	}
 	
 	renderObj =< A.v.PageListItem
 	
 }
+
+
+[globalVar = LIT:0<{$A.itemsPerPage}]
+
+A.v.PageList.stdWrap.append =< A.h.PageBrowser
+
+[global]
