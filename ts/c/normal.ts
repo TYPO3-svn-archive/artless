@@ -23,6 +23,10 @@ A.c.normal {
 		tx_realurl_enable = 1
 		# ??? redirectOldLinksToNew = 1
 		
+		removeDefaultJS = 1
+		removeDefaultCSS = 1
+		disablePrefixComment = 1
+		disableImgBorderAttr = 1
 	}
 	
 	# custom title and RSS menu
