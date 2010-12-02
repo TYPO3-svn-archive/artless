@@ -6,7 +6,6 @@ A.v.PageList {
 	table = pages
 	
 	select {
-		pidInList = current
 		orderBy = sorting
 		begin.cObject = TEXT
 		begin.cObject.value = {$A.itemsPerPage}
