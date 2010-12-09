@@ -149,20 +149,24 @@ $TCA['pages']['columns']['media']['config']['maxitems'] = 100;
 	$TCA['pages']['palettes']['2']['showitem']
 ); */
 
+/*
 $TCA['pages']['palettes']['5'] = array('showitem' => 'author_email, --linebreak--, tx_artless_authorpages, --linebreak--, tx_artless_authorfeusers');
 
 $TCA['pages']['palettes'] = t3lib_div::array_merge($TCA['pages']['palettes'], array(
 	'6' => array('showitem' => 'tx_artless_startdate, tx_artless_enddate', 'canNotCollapse' => 1),
 ));
+*/
 
-
+/*
 $TCA['pages']['types']['1']['showitem'] = str_replace(
 	'--palette--;LLL:EXT:lang/locallang_general.xml:LGL.author;5;;3-3-3,',
 	'crdate,
 	author;;5,',
 	$TCA['pages']['types']['1']['showitem']
 );
+*/
 
+/*
 $TCA['pages']['types']['1']['showitem'] = str_replace(
 	'abstract,',
 	'abstract;;;richtext[]:rte_transform[mode=ts],
@@ -172,7 +176,9 @@ $TCA['pages']['types']['1']['showitem'] = str_replace(
 	tx_artless_enablecomments,',
 	$TCA['pages']['types']['1']['showitem']
 );
+*/
 
+/*
 foreach ($TCA['pages']['types'] as $pageType => &$settings) {
 	
 	if (in_array($pageType, array('3', '4'))) {
@@ -199,6 +205,30 @@ foreach ($TCA['pages']['types'] as $pageType => &$settings) {
 	);
 	
 }
+*/
+
+
+
+tx_artless_tcatools::modifyShowItemByPaletteKey(
+	$TCA['pages']['types'][t3lib_pageSelect::DOKTYPE_DEFAULT]['showitem'], 
+	'abstract', 
+	array(
+		'field' => 'abstract',
+		//'label' => 'LLL:EXT:cms/locallang_tca.xml:pages.palettes.abstract',
+		'palette' => '',
+		'special' => 'richtext:rte_transform[flag=rte_enabled|mode=ts_css]'
+	)
+);
+
+/*
+tx_artless_tcatools::modifyShowItemByField(
+	&$TCA['pages']['palettes']['abstract']['showitem'], 
+	'abstract', 
+	array(
+		'special' => 'richtext:rte_transform[flag=rte_enabled|mode=ts_css]',
+	)
+);
+*/
 
 
 t3lib_extMgm::addStaticFile($_EXTKEY,'static/artless_typoscript_library/', 'Artless TypoScript Library');
