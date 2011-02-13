@@ -9,8 +9,8 @@
 			<label index="pages.crdate">Creation date:</label>
 			<label index="pages.tx_artless_startdate">Start date:</label>
 			<label index="pages.tx_artless_enddate">End date:</label>
-			<label index="pages.tx_artless_authorpages">Pages:</label>
-			<label index="pages.tx_artless_authorfeusers">Website users:</label>
+			<label index="pages.tx_artless_authorpages">Author (page):</label>
+			<label index="pages.tx_artless_authorfeusers">Author (fe_user):</label>
 			<label index="pages.tx_artless_categories">Categories:</label>
 			<label index="pages.tx_artless_relatedpages">Related pages:</label>
 			<label index="pages.tx_artless_enablecomments">Enable comments:</label>
@@ -24,7 +24,8 @@
 			<label index="pages.crdate">Erstellungsdatum:</label>
 			<label index="pages.tx_artless_startdate">Anfangsdatum:</label>
 			<label index="pages.tx_artless_enddate">Enddatum:</label>
-			<label index="pages.tx_artless_authors">Autoren: </label>
+			<label index="pages.tx_artless_authorpages">Autor (page):</label>
+			<label index="pages.tx_artless_authorfeusers">Autor (fe_user):</label>
 			<label index="pages.tx_artless_categories">Kategorien: </label>
 			<label index="pages.tx_artless_links">Verweise: </label>
 			<label index="pages.tx_artless_enable_comments">Kommentare erlauben:</label>
