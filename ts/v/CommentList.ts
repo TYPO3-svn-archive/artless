@@ -7,6 +7,7 @@ A.v.CommentList {
 	select {
 		pidInList.data = page:uid
 		orderBy = tstamp asc
+		where = approved = 1
 	}
 	
 	renderObj =< A.v.CommentListItem
