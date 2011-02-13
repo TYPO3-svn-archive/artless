@@ -10,7 +10,7 @@ A.v.PageList {
 		begin.cObject = TEXT
 		begin.cObject.value = {$A.itemsPerPage}
 		begin.cObject {
-			stdWrap.dataWrap = | * {GPvar:tx_pagebrowse_pi1|page}
+			stdWrap.dataWrap = | * {gp:tx_pagebrowse_pi1|page}
 			prioriCalc = intval
 		}
 		max = {$A.itemsPerPage}
