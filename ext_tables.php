@@ -130,6 +130,7 @@ $tempColumns = array(
 
 t3lib_div::loadTCA('pages');
 t3lib_extMgm::addTCAcolumns('pages', $tempColumns, 1);
+t3lib_extMgm::addToAllTCAtypes("pages","--div--;Artless, tx_artless_startdate,tx_artless_enddate,tx_artless_authorpages,tx_artless_authorfeusers,tx_artless_categories,tx_artless_relatedpages,tx_artless_mediacaptions,tx_artless_enablecomments");
 
 
 $TCA['pages']['columns']['media']['config']['size'] = 10;
