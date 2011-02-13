@@ -9,7 +9,8 @@ A.h.Menu {
 		
 		NO = 1
 		NO {
-			allWrap = <li class="A_first">|</li>|*|<li>|</li>|*|<li class="A_last">|</li>
+			allWrap = <li class="A_first {field:alias}">|</li>|*|<li class="{field:alias}">|</li>|*|<li class="A_last {field:alias}">|</li>
+			allWrap.insertData = 1
 			ATagBeforeWrap = 1
 			ATagTitle.field = description
 		}
