@@ -4,13 +4,12 @@ A.h.Menu {
 	1 = TMENU
 	1 {
 		
-		noBlur = 1
 		wrap = <ul class="A_menu">|</ul>
+		noBlur = 1
 		
 		NO = 1
 		NO {
-			allWrap = <li class="A_first {field:alias}">|</li>|*|<li class="{field:alias}">|</li>|*|<li class="A_last {field:alias}">|</li>
-			allWrap.insertData = 1
+			wrapItemAndSub = <li class="A_first">|</li>|*|<li>|</li>|*|<li class="A_last">|</li>
 			ATagBeforeWrap = 1
 			ATagTitle.field = description
 		}
