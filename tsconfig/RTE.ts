@@ -43,15 +43,27 @@ RTE.classesAnchor {
 	}
 }
 
-RTE.default.proc.allowedClasses := addToList(facebox)
-RTE.default.classesLinks := addToList(facebox)
-RTE.default.classesAnchor := addToList(facebox)
-RTE.classesAnchor := addToList(facebox)
+RTE.default.proc.allowedClasses := addToList(colorbox)
+RTE.default.classesLinks := addToList(colorbox)
+RTE.default.classesAnchor := addToList(colorbox)
+RTE.classesAnchor := addToList(colorbox)
 
 RTE.classesAnchor {
-	facebox {
-		class = facebox
+	colorbox {
+		class = colorbox
 		type = page
+	}
+}
+
+RTE.default.proc.allowedClasses := addToList(colorbox-iframe)
+RTE.default.classesLinks := addToList(colorbox-iframe)
+RTE.default.classesAnchor := addToList(colorbox-iframe)
+RTE.classesAnchor := addToList(colorbox-iframe)
+
+RTE.classesAnchor {
+	colorbox-iframe {
+		class = colorbox-iframe
+		type = url
 	}
 }
 
