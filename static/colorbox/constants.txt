@@ -1,0 +1,7 @@
+styles.content.imgtext.linkWrap {
+	
+	lightboxEnabled = 1
+	lightboxCssClass = colorbox
+	lightboxRelAttribute = colorbox[{field:uid}]
+	
+}
