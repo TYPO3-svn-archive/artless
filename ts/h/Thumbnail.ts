@@ -1,7 +1,7 @@
 A.h.Thumbnail = IMAGE
 A.h.Thumbnail {
 	
-	wrap = <div class="A_thumbnail">|</div>
+	wrap = <p class="A_thumbnail">|</p>
 	
 	file {
 		import = uploads/media/
