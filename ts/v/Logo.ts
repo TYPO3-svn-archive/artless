@@ -1,7 +1,11 @@
 A.v.Logo = IMAGE
 A.v.Logo {
 	
-	stdWrap.wrap = <div class="A_logo">|</div>
+	stdWrap {
+		wrap = <div class="A_logo">|</div>
+		typolink < A.h.linkToHome
+		required = 1
+	}
 	
 	file {
 		import.cObject = TEXT
@@ -11,7 +15,5 @@ A.v.Logo {
 			listNum = 0
 		}
 	}
-	
-	stdWrap.typolink < A.h.linkToHome
 	
 }
