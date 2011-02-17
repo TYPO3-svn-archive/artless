@@ -5,8 +5,18 @@ A.v.PageList {
 	
 	table = pages
 	
+	select.orderBy = sorting
+	
+	renderObj =< A.v.PageListItem
+	
+}
+
+# add page browser if the constant A.itemsPerPage is set
+[globalVar = LIT: 0 < {$A.itemsPerPage}]
+
+A.v.PageList {
+	
 	select {
-		orderBy = sorting
 		begin.cObject = TEXT
 		begin.cObject.value = {$A.itemsPerPage}
 		begin.cObject {
@@ -16,13 +26,8 @@ A.v.PageList {
 		max = {$A.itemsPerPage}
 	}
 	
-	renderObj =< A.v.PageListItem
+	stdWrap.append =< A.h.PageBrowser
 	
 }
-
-
-[globalVar = LIT:0<{$A.itemsPerPage}]
-
-A.v.PageList.stdWrap.append =< A.h.PageBrowser
 
 [global]
