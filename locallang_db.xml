@@ -6,33 +6,28 @@
 	</meta>
 	<data type="array">
 		<languageKey index="default" type="array">
-			<label index="pages.crdate">Creation date:</label>
-			<label index="pages.tx_artless_startdate">Start date:</label>
-			<label index="pages.tx_artless_enddate">End date:</label>
-			<label index="pages.tx_artless_authorpages">Author (page):</label>
-			<label index="pages.tx_artless_authorfeusers">Author (fe_user):</label>
-			<label index="pages.tx_artless_categories">Categories:</label>
-			<label index="pages.tx_artless_relatedpages">Related pages:</label>
-			<label index="pages.tx_artless_enablecomments">Enable comments:</label>
-			<label index="pages.tx_artless_price">Price:</label>
-			<label index="pages.tx_artless_quantity">Quantity:</label>
-			<label index="pages.tx_artless_orders">Orders:</label>
-			<label index="pages.tx_artless_place">Place:</label>
-			<label index="pages.tx_artless_mediacaptions">Captions:</label>
+			<label index="pages.crdate">Creation Date</label>
+			<label index="pages.tx_artless_startdate">Start Date</label>
+			<label index="pages.tx_artless_enddate">End Date</label>
+			<label index="pages.tx_artless_place">Place Name</label>
+			<label index="pages.tx_artless_enablecomments">Allow Comments</label>
+			<label index="pages.tx_artless_categories">Categories</label>
+			<label index="pages.tx_artless_relatives">Relatives</label>
+			<label index="pages.tx_artless_owners">Owners</label>
+			<label index="pages.tx_artless_participants">Participants</label>
+			<label index="pages.tx_artless_price">Price</label>
 		</languageKey>
 		<languageKey index="de" type="array">
-			<label index="pages.crdate">Erstellungsdatum:</label>
-			<label index="pages.tx_artless_startdate">Anfangsdatum:</label>
-			<label index="pages.tx_artless_enddate">Enddatum:</label>
-			<label index="pages.tx_artless_authorpages">Autor (page):</label>
-			<label index="pages.tx_artless_authorfeusers">Autor (fe_user):</label>
-			<label index="pages.tx_artless_categories">Kategorien: </label>
-			<label index="pages.tx_artless_links">Verweise: </label>
-			<label index="pages.tx_artless_enable_comments">Kommentare erlauben:</label>
-			<label index="pages.tx_artless_price">Preis:</label>
-			<label index="pages.tx_artless_quantity">Anzahl:</label>
-			<label index="pages.tx_artless_orders">Bestellungen:</label>
-			<label index="pages.tx_artless_place">Ort:</label>
+			<label index="pages.crdate">Erstellungsdatum</label>
+			<label index="pages.tx_artless_startdate">Anfangsdatum</label>
+			<label index="pages.tx_artless_enddate">Enddatum</label>
+			<label index="pages.tx_artless_place">Ortsname</label>
+			<label index="pages.tx_artless_enablecomments">Kommentare erlauben</label>
+			<label index="pages.tx_artless_categories">Kategorien</label>
+			<label index="pages.tx_artless_relatives">Verwandte</label>
+			<label index="pages.tx_artless_owners">Besitzer</label>
+			<label index="pages.tx_artless_participants">Teilnehmer</label>
+			<label index="pages.tx_artless_price">Preis</label>
 		</languageKey>
 	</data>
 </T3locallang>
